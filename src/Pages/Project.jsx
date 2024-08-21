@@ -61,7 +61,7 @@ const Project = () => {
   };
 
   return (
-    <div className='max-w-[1200px] mx-auto p-5 h-[700px]' id='project'>
+    <div className='max-w-[1200px] mx-auto p-5  ' >
       <div className='pb-8' data-aos="fade-in" data-aos-duration='1600'>
         <p className='text-4xl mb-3 font-bold primary' >My Projects </p>
         <p className='text-gray-400'>Check out some of my recent work</p>
@@ -138,7 +138,7 @@ const Project = () => {
         </div>
       </div>
 
-      <div className='flex justify-between mt-8'>
+      <div className='flex justify-between mt-8 '>
         <button
           onClick={prevProject}
           className='text-white bg-gradient-to-r  hover:bg-gradient-to-br  from-cyan-500 to-blue-500  hover:from-cyan-700 hover:to-blue-700 px-4 py-2 rounded-full transition duration-300'

@@ -67,7 +67,7 @@ const Skills = () => {
   ];
 
   return (
-    <section className=" text-white py-10 h-" data-aos="fade-in" data-aos-duration='1600'>
+    <section className=" text-white py-10 " data-aos="fade-in" data-aos-duration='1600'>
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-semibold text-center mb-8">My Technical Skills</h2>
         <div className="flex flex-wrap">
