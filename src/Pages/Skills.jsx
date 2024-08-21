@@ -67,7 +67,7 @@ const Skills = () => {
   ];
 
   return (
-    <section className=" text-white py-10 h-[1300px]" data-aos="fade-in" data-aos-duration='1600'>
+    <section className=" text-white py-10 h-" data-aos="fade-in" data-aos-duration='1600'>
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-semibold text-center mb-8">My Technical Skills</h2>
         <div className="flex flex-wrap">
@@ -224,43 +224,42 @@ const Skills = () => {
         </div>
       </div>
        {/* Professional Skills */}
-  <div className=" text-white p-8"  data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom">
-  <h2 className="text-center text-xl font-semibold mb-8">Professional Skills</h2>
-  <div className="grid grid-cols-4 ">
-    {professionalSkills.map((skill) => (
-      <div key={skill.name} className="flex justify-center items-center">
-        <div className="relative mb-4">
-          <svg className="w-24 h-24">
-            <circle
-              cx="50%"
-              cy="50%"
-              r="40"
-              strokeWidth="6"
-              stroke="#1E293B"
-              fill="none"
-            />
-            <circle
-              cx="50%"
-              cy="50%"
-              r="40"
-              strokeWidth="6"
-              stroke="#0ea5e9"
-              strokeDasharray={`${2.5 * skill.percentage} 251`}
-              fill="none"
-            />
-          </svg>
-          <div className="absolute inset-0 flex items-center justify-center">
-            <span className="text-xl font-bold">
-              <CountUp end={skill.percentage} duration={4} />%
-            </span>
+       <div className="text-white p-8 justify-between items-center sm:items-start" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+      <h2 className="text-center text-xl font-semibold mb-8">Professional Skills</h2>
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
+        {professionalSkills.map((skill) => (
+          <div key={skill.name} className="flex justify-center items-center">
+            <div className="relative mb-4">
+              <svg className="w-24 h-24 sm:w-24 sm:h-24">
+                <circle
+                  cx="50%"
+                  cy="50%"
+                  r="40"
+                  strokeWidth="6"
+                  stroke="#1E293B"
+                  fill="none"
+                />
+                <circle
+                  cx="50%"
+                  cy="50%"
+                  r="40"
+                  strokeWidth="6"
+                  stroke="#0ea5e9"
+                  strokeDasharray={`${2.5 * skill.percentage} 251`}
+                  fill="none"
+                />
+              </svg>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <span className="text-lg sm:text-xl font-bold">
+                  <CountUp end={skill.percentage} duration={4} />%
+                </span>
+              </div>
+            </div>
+            <p className="text-center text-base sm:text-lg font-medium">{skill.name}</p>
           </div>
-        </div>
-        <p className="text-center text-lg font-medium">{skill.name}</p>
+        ))}
       </div>
-    ))}
-  </div>
-</div>
+    </div>
     </section>
   );
 };
