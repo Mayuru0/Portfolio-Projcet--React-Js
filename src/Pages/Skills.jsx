@@ -40,7 +40,7 @@ const Skills = () => {
 
   const Database   = [
     { bskill: 'MySQL', level: 60, img: mysql },
-    { bskill: 'MongoDB', level: 80, img: mongoDB },
+    { bskill: 'MongoDB', level: 70, img: mongoDB },
   
   ];
 
